@@ -28,3 +28,14 @@ https://www.chakra-ui.com/docs/components/button
 
 https://www.bing.com/videos/riverview/relatedvideo?q=chakra+ui&mid=F021C59ADC3608845FD6F021C59ADC3608845FD6&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCW5YeuERMmlnqo4oq8vwUpg&FORM=VIRE
 
+
+
+1:14:37
+
+
+1;21:35
+
+npm i zustand
+
+
+1:30:47

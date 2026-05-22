@@ -26,6 +26,7 @@ export const createProduct = async (req, res) => {
         res.status(500).json({message: 'Server Error'});
     }
 
+    
 };
 export const updateProduct =  async (req, res) => {
     const {id} = req.params;
