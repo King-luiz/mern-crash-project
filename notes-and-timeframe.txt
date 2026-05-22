@@ -1,0 +1,30 @@
+>> file structure
+
+
+>>backend
+
+npm run dev  - to run the project
+
+>> database 
+ mongoDB
+ https://cloud.mongodb.com/v2/6a0befda5a4dea3c34858440#/explorer/6a0bf01dbe3a37e17f8dd6ca/products/products/find
+
+
+>>frontend part
+
+npm create vite@latest .
+
+select react >> javascript
+
+
+npm install
+npm run dev
+
+
+
+>> chakra UI
+
+https://www.chakra-ui.com/docs/components/button
+
+https://www.bing.com/videos/riverview/relatedvideo?q=chakra+ui&mid=F021C59ADC3608845FD6F021C59ADC3608845FD6&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCW5YeuERMmlnqo4oq8vwUpg&FORM=VIRE
+
