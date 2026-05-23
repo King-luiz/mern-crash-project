@@ -8,9 +8,10 @@ import productRoutes from './routes/product.route.js';
 
 
 dotenv.config();
+
 const app = express();
-app.use("/api/products", productRoutes);
 app.use(express.json()); // Middleware to parse JSON bodies
+app.use("/api/products", productRoutes);
 
 const PORT = process.env.PORT || 5000;
 // postman desktop application

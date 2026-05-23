@@ -28,24 +28,45 @@ export const createProduct = async (req, res) => {
 
     
 };
-export const updateProduct =  async (req, res) => {
-    const {id} = req.params;
-    //const updates = req.body;
-
+export const updateProduct = async (req, res) => {
+    const { id } = req.params;
     const product = req.body;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).json({success: false, message: 'Invalid product ID'});
-    }   
+        return res.status(400).json({
+            success: false,
+            message: "Invalid product ID"
+        });
+    }
 
     try {
-        const updatedProduct = await Product.findByIdAndUpdate(id, product, {new: true});
-        res.status(200).json({success: true, message: 'Product updated successfully'});
+        const updatedProduct = await Product.findByIdAndUpdate(
+            id,
+            product,
+            { new: true }
+        );
+
+        if (!updatedProduct) {
+            return res.status(404).json({
+                success: false,
+                message: "Product not found"
+            });
+        }
+
+        // 🔥 IMPORTANT: return data
+        res.status(200).json({
+            success: true,
+            message: "Product updated successfully",
+            data: updatedProduct
+        });
+
     } catch (error) {
         console.error("Error updating product: ", error);
-        res.status(404).json({success: false, message: 'Product not found'});
+        res.status(500).json({
+            success: false,
+            message: "Server Error"
+        });
     }
-    
 }; 
 export const deleteProduct = async (req, res) => {
     const {id} = req.params
