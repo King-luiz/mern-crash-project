@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/server.js",
+    "dev": " NODE_ENV=development nodemon backend/server.js",
     "build" : "npm install && npm run build --prefix frontend && npm run build --prefix frontend",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "node backend/server.js"
+    "start": "NODE_ENV=production node backend/server.js"
     
   },
   "type": "module",
