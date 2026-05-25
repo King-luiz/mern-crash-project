@@ -41,4 +41,5 @@ npm i zustand
 1:30:47
 
 1:54:11
-2:00:27
+2:01:05 end op build
+
